@@ -12,19 +12,13 @@ protocol ViperInteractorInput {
     func fromPresenter() -> [Todo]
 }
 
-protocol ViperInteractorOutput {
-    // MARK: Callback methods for presenter
-    func forPresenter()
-}
-
 // MARK: - ViperInteractor
 
 final class ViperInteractor {
     
     // MARK: Architecture properties
     
-    private var repository:ViperRepositoryInterface
-    var presenter: ViperInteractorOutput!
+    private var repository: ViperRepositoryInterface
 
     // MARK: Instance methods
 
@@ -35,7 +29,6 @@ final class ViperInteractor {
     // MARK: Other properties
     
     // MARK: Other methods
-
 }
 
 // MARK: - ViperInteractorInput

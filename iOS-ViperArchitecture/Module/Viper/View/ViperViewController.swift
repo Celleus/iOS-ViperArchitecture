@@ -81,7 +81,7 @@ extension ViperViewController: ViperViewInput {
     }
 }
 
-// MARK: - UITableViewDelegate
+// MARK: - UITableViewDataSource
 
 extension ViperViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

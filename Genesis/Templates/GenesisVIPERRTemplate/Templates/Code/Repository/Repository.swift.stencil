@@ -1,0 +1,37 @@
+//
+//  {{ module_name }}Repository
+//  {{ project_name }}
+//
+//  Created by {{ developer_name }} on {{ date }}.
+//
+
+import Foundation
+
+// MARK: - {{ module_name }}RepositoryInterface
+
+protocol {{ module_name }}RepositoryInterface {
+    func getDatas() -> [String]
+}
+
+// MARK: - {{ module_name }}Repository
+
+final class {{ module_name }}Repository: {{ module_name }}RepositoryInterface {
+    
+    // MARK: Instance properties
+
+    let isFlag: Bool
+    
+    // MARK: Instance methods
+
+    init(_ isFlag: Bool = false) {
+        self.isFlag = isFlag
+    }
+
+    // MARK: Other properties
+    
+    // MARK: Other methods
+    
+    func getDatas() -> [String] {
+        return isFlag ? ["dog","cat","mouse"] : ["apple","banana","orange"]
+    }
+}

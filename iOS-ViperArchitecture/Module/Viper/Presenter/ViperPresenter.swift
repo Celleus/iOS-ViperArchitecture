@@ -57,9 +57,3 @@ extension ViperPresenter: ViperPresenterInput {
         datas()
     }
 }
-
-// MARK: ViperInteractorOutput
-
-extension ViperPresenter: ViperInteractorOutput {
-    func forPresenter() {}
-}
