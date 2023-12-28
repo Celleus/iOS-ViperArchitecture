@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C761E15B2B3CBB6D00737FF9 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C761E15A2B3CBB6D00737FF9 /* Realm */; };
+		C761E15D2B3CBB6D00737FF9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C761E15C2B3CBB6D00737FF9 /* RealmSwift */; };
+		C761E15F2B3CBC2100737FF9 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C761E15E2B3CBC2100737FF9 /* Todo.swift */; };
+		C761E16F2B3CD1F100737FF9 /* ViperRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C761E16E2B3CD1F100737FF9 /* ViperRepository.swift */; };
+		C762E84B2B3C511800DA832E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762E84A2B3C511800DA832E /* AppDelegate.swift */; };
+		C762E84D2B3C511800DA832E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762E84C2B3C511800DA832E /* SceneDelegate.swift */; };
+		C762E84F2B3C511800DA832E /* ViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762E84E2B3C511800DA832E /* ViperViewController.swift */; };
+		C762E8522B3C511800DA832E /* ViperViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C762E8502B3C511800DA832E /* ViperViewController.storyboard */; };
+		C762E8542B3C511A00DA832E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C762E8532B3C511A00DA832E /* Assets.xcassets */; };
+		C762E8572B3C511A00DA832E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C762E8552B3C511A00DA832E /* LaunchScreen.storyboard */; };
+		C762E8662B3C526C00DA832E /* ViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762E8652B3C526C00DA832E /* ViperPresenter.swift */; };
+		C762E8682B3C52CA00DA832E /* ViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762E8672B3C52CA00DA832E /* ViperInteractor.swift */; };
+		C762E86A2B3C536C00DA832E /* ViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762E8692B3C536C00DA832E /* ViperRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C761E15E2B3CBC2100737FF9 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		C761E16E2B3CD1F100737FF9 /* ViperRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperRepository.swift; sourceTree = "<group>"; };
+		C762E8472B3C511800DA832E /* iOS-ViperArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-ViperArchitecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C762E84A2B3C511800DA832E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C762E84C2B3C511800DA832E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C762E84E2B3C511800DA832E /* ViperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperViewController.swift; sourceTree = "<group>"; };
+		C762E8512B3C511800DA832E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ViperViewController.storyboard; sourceTree = "<group>"; };
+		C762E8532B3C511A00DA832E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C762E8562B3C511A00DA832E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C762E8582B3C511A00DA832E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C762E8652B3C526C00DA832E /* ViperPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperPresenter.swift; sourceTree = "<group>"; };
+		C762E8672B3C52CA00DA832E /* ViperInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperInteractor.swift; sourceTree = "<group>"; };
+		C762E8692B3C536C00DA832E /* ViperRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperRouter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C762E8442B3C511800DA832E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C761E15D2B3CBB6D00737FF9 /* RealmSwift in Frameworks */,
+				C761E15B2B3CBB6D00737FF9 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C761E1582B3CBAA000737FF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C761E15E2B3CBC2100737FF9 /* Todo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C761E16D2B3CD0FA00737FF9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C761E16E2B3CD1F100737FF9 /* ViperRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C762E83E2B3C511800DA832E = {
+			isa = PBXGroup;
+			children = (
+				C762E8492B3C511800DA832E /* iOS-ViperArchitecture */,
+				C762E8482B3C511800DA832E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C762E8482B3C511800DA832E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C762E8472B3C511800DA832E /* iOS-ViperArchitecture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C762E8492B3C511800DA832E /* iOS-ViperArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				C762E84A2B3C511800DA832E /* AppDelegate.swift */,
+				C762E84C2B3C511800DA832E /* SceneDelegate.swift */,
+				C761E1582B3CBAA000737FF9 /* Model */,
+				C762E85E2B3C519200DA832E /* Module */,
+				C762E8532B3C511A00DA832E /* Assets.xcassets */,
+				C762E8552B3C511A00DA832E /* LaunchScreen.storyboard */,
+				C762E8582B3C511A00DA832E /* Info.plist */,
+			);
+			path = "iOS-ViperArchitecture";
+			sourceTree = "<group>";
+		};
+		C762E85E2B3C519200DA832E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				C762E85F2B3C519900DA832E /* Viper */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		C762E85F2B3C519900DA832E /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				C761E16D2B3CD0FA00737FF9 /* Repository */,
+				C762E8622B3C51D300DA832E /* Interactor */,
+				C762E8612B3C51CB00DA832E /* Presenter */,
+				C762E8632B3C51E300DA832E /* Router */,
+				C762E8602B3C51B200DA832E /* View */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		C762E8602B3C51B200DA832E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C762E84E2B3C511800DA832E /* ViperViewController.swift */,
+				C762E8502B3C511800DA832E /* ViperViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C762E8612B3C51CB00DA832E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C762E8652B3C526C00DA832E /* ViperPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C762E8622B3C51D300DA832E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C762E8672B3C52CA00DA832E /* ViperInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C762E8632B3C51E300DA832E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C762E8692B3C536C00DA832E /* ViperRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C762E8462B3C511800DA832E /* iOS-ViperArchitecture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C762E85B2B3C511A00DA832E /* Build configuration list for PBXNativeTarget "iOS-ViperArchitecture" */;
+			buildPhases = (
+				C762E8432B3C511800DA832E /* Sources */,
+				C762E8442B3C511800DA832E /* Frameworks */,
+				C762E8452B3C511800DA832E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-ViperArchitecture";
+			packageProductDependencies = (
+				C761E15A2B3CBB6D00737FF9 /* Realm */,
+				C761E15C2B3CBB6D00737FF9 /* RealmSwift */,
+			);
+			productName = "iOS-ViperArchitecture";
+			productReference = C762E8472B3C511800DA832E /* iOS-ViperArchitecture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C762E83F2B3C511800DA832E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					C762E8462B3C511800DA832E = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = C762E8422B3C511800DA832E /* Build configuration list for PBXProject "iOS-ViperArchitecture" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C762E83E2B3C511800DA832E;
+			packageReferences = (
+				C761E1592B3CBB6D00737FF9 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = C762E8482B3C511800DA832E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C762E8462B3C511800DA832E /* iOS-ViperArchitecture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C762E8452B3C511800DA832E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C762E8572B3C511A00DA832E /* LaunchScreen.storyboard in Resources */,
+				C762E8542B3C511A00DA832E /* Assets.xcassets in Resources */,
+				C762E8522B3C511800DA832E /* ViperViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C762E8432B3C511800DA832E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C761E15F2B3CBC2100737FF9 /* Todo.swift in Sources */,
+				C762E84F2B3C511800DA832E /* ViperViewController.swift in Sources */,
+				C762E86A2B3C536C00DA832E /* ViperRouter.swift in Sources */,
+				C762E8662B3C526C00DA832E /* ViperPresenter.swift in Sources */,
+				C762E8682B3C52CA00DA832E /* ViperInteractor.swift in Sources */,
+				C762E84B2B3C511800DA832E /* AppDelegate.swift in Sources */,
+				C761E16F2B3CD1F100737FF9 /* ViperRepository.swift in Sources */,
+				C762E84D2B3C511800DA832E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C762E8502B3C511800DA832E /* ViperViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C762E8512B3C511800DA832E /* Base */,
+			);
+			name = ViperViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		C762E8552B3C511A00DA832E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C762E8562B3C511A00DA832E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C762E8592B3C511A00DA832E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C762E85A2B3C511A00DA832E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C762E85C2B3C511A00DA832E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VGWR98A2DD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-ViperArchitecture/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.celleus.iOS-ViperArchitecture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C762E85D2B3C511A00DA832E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VGWR98A2DD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-ViperArchitecture/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.celleus.iOS-ViperArchitecture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C762E8422B3C511800DA832E /* Build configuration list for PBXProject "iOS-ViperArchitecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C762E8592B3C511A00DA832E /* Debug */,
+				C762E85A2B3C511A00DA832E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C762E85B2B3C511A00DA832E /* Build configuration list for PBXNativeTarget "iOS-ViperArchitecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C762E85C2B3C511A00DA832E /* Debug */,
+				C762E85D2B3C511A00DA832E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C761E1592B3CBB6D00737FF9 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 10.45.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C761E15A2B3CBB6D00737FF9 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C761E1592B3CBB6D00737FF9 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		C761E15C2B3CBB6D00737FF9 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C761E1592B3CBB6D00737FF9 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C762E83F2B3C511800DA832E /* Project object */;
+}
