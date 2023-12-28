@@ -9,12 +9,11 @@ import Foundation
 
 protocol ViperPresenterInput {
     // MARK: View Life-Cycle methods
-
     func viewDidLoad()
 
     // MARK: Other methods called from View
-
     func fromView()
+    func createTodo(_ title: String)
 }
 
 // MARK: - ViperPresenter
@@ -55,5 +54,9 @@ extension ViperPresenter: ViperPresenterInput {
     
     func fromView() {
         datas()
+    }
+    
+    func createTodo(_ title: String) {
+        interactor.createTodo(title)
     }
 }

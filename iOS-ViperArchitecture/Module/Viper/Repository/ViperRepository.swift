@@ -11,6 +11,7 @@ import Foundation
 
 protocol ViperRepositoryInterface {
     func getDatas() -> [Todo]
+    func addTodo(_ title: String)
 }
 
 // MARK: - ViperRepository
@@ -33,5 +34,11 @@ final class ViperRepository: ViperRepositoryInterface {
     
     func getDatas() -> [Todo] {
         return Todo.all(isDelete)
+    }
+    
+    func addTodo(_ title: String) {
+        var todo = Todo()
+        todo.title = title
+        todo.create()
     }
 }

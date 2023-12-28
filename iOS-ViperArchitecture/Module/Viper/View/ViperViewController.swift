@@ -66,9 +66,7 @@ final class ViperViewController: UIViewController {
     }
     
     func createTodo(_ title: String) {
-        var todo = Todo()
-        todo.title = title
-        todo.create()
+        presenter.createTodo(title)
     }
 }
 
