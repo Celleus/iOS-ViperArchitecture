@@ -44,7 +44,6 @@ extension ViperRouter {
         let presenter = ViperPresenter(view: view, interactor: interactor, router: router)
 
         view.presenter = presenter
-        interactor.presenter = presenter
 
         return view
     }

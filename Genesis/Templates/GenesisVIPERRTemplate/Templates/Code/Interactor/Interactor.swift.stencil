@@ -1,0 +1,42 @@
+//
+//  {{ module_name }}Interactor
+//  {{ project_name }}
+//
+//  Created by {{ developer_name }} on {{ date }}.
+//
+
+import Foundation
+
+protocol {{ module_name }}InteractorInput: AnyObject {
+    // MARK: Methods called from presenter
+    func fromPresenter()
+}
+
+protocol {{ module_name }}InteractorOutput: AnyObject {
+    // MARK: Callback methods for presenter
+    func forPresenter()
+}
+
+final class {{ module_name }}Interactor {
+    
+    // MARK: Architecture properties
+
+    private var repository:ViperRepositoryInterface
+    weak var presenter: {{ module_name }}InteractorOutput!
+
+    // MARK: Instance methods
+
+    init(repository: ViperRepository) {
+        self.repository = repository
+    }
+
+    // MARK: Other properties
+    
+    // MARK: Other methods
+}
+
+// MARK: - ViperInteractorInput
+
+extension {{ module_name }}Interactor: {{ module_name }}InteractorInput {
+    func fromPresenter() {}
+}

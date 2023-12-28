@@ -1,0 +1,55 @@
+//
+//  {{ module_name }}Router
+//  {{ project_name }}
+//
+//  Created by {{ developer_name }} on {{ date }}.
+//
+
+import UIKit
+
+@MainActor
+protocol {{ module_name }}RouterInput: AnyObject {
+    // MARK: View transitions
+    func presentViewController()
+}
+
+@MainActor
+final class {{ module_name }}Router {
+
+    // MARK: Architecture properties
+
+    private unowned let viewController: {{ module_name }}ViewController
+
+    // MARK: Instance methods
+
+    init(viewController: {{ module_name }}ViewController) {
+        self.viewController = viewController
+    }
+
+    // MARK: Other properties
+    
+    // MARK: Other methods
+}
+
+// MARK: - Assemble
+
+extension ViperRouter {
+    static func assembleModule() -> {{ module_name }}ViewController {
+        let view = {{ module_name }}ViewController()
+        // TODO: Create a Storyboard with the same name as "{{ module_name }}".
+        // let view = UIStoryboard(name: "{{ module_name }}ViewController", bundle: nil).instantiateInitialViewController() as! {{ module_name }}ViewController
+        let interactor = {{ module_name }}Interactor()
+        let router = {{ module_name }}Router(viewController: view)
+        let presenter = {{ module_name }}Presenter(view: view, interactor: interactor, router: router)
+
+        view.presenter = presenter
+
+        return view
+    }
+}
+
+// MARK: - ViperRouterInput
+
+extension {{ module_name }}Router: {{ module_name }}RouterInput {
+    func presentViewController() {}
+}

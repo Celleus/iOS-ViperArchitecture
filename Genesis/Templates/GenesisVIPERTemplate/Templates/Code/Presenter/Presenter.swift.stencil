@@ -1,0 +1,50 @@
+//
+//  {{ module_name }}Presenter
+//  {{ project_name }}
+//
+//  Created by {{ developer_name }} on {{ date }}.
+//
+
+import Foundation
+
+@MainActor
+protocol {{ module_name }}PresenterInput: AnyObject {
+    // MARK: View Life-Cycle methods
+
+    func viewDidLoad()
+
+    // MARK: Other methods called from View
+
+    func fromView() {}
+}
+
+final class {{ module_name }}Presenter {
+    
+    // MARK: Architecture properties
+
+    weak var view: {{ module_name }}ViewInput!
+    var interactor: {{ module_name }}InteractorInput!
+    var router: {{ module_name }}RouterInput!
+
+    // MARK: Instance methods
+
+    init(view: {{ module_name }}ViewInput, interactor: {{ module_name }}InteractorInput, router: {{ module_name }}RouterInput) {
+        self.view = view
+        self.interactor = interactor
+        self.router = router
+    }
+
+    // MARK: Other properties
+    
+    // MARK: Other methods
+}
+
+// MARK: - ViperPresenterInput
+
+extension {{ module_name }}Presenter: {{ module_name }}PresenterInput {
+
+    func viewDidLoad() {}
+
+    func fromView() {}
+
+}
