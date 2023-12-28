@@ -10,6 +10,7 @@ import Foundation
 protocol ViperInteractorInput {
     // MARK: Methods called from presenter
     func fromPresenter() -> [Todo]
+    func createTodo(_ title: String)
 }
 
 // MARK: - ViperInteractor
@@ -34,7 +35,13 @@ final class ViperInteractor {
 // MARK: - ViperInteractorInput
 
 extension ViperInteractor: ViperInteractorInput {
+    
     func fromPresenter() -> [Todo] {
-        return self.repository.getDatas()
+        return repository.getDatas()
     }
+    
+    func createTodo(_ title: String) {
+        repository.addTodo(title)
+    }
+    
 }
